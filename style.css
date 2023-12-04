@@ -481,9 +481,9 @@ text-align: end;
 }
 @media (max-width:1000px) {
     .video{
-        height: 25vh;
+        height: 50vh;
         position: relative;
-        margin-top: 3vw;     
+        margin-top: 0vw;     
     }
     .video .play{
         padding: 7vw 5vw;
@@ -493,6 +493,12 @@ text-align: end;
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
+    }
+    .page2{
+        padding: 0 0;
+    }
+    .lefth {
+        font-size: 5vw;
     }
     .leftpage3{
         width: 80%;
@@ -509,6 +515,10 @@ text-align: end;
     }
     .toppage3 a{
         font-size: 25px;
+    }
+    .child{
+        min-height: 55vh;
+        width: 80vw;
     }
 }
 @media (max-width:800px) {
