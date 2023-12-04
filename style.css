@@ -528,8 +528,8 @@ text-align: end;
         gap: 5vw;
     }
     .elem{
-        height: 100vh ;
-        width: 100%;
+        height: 80vh ;
+        width: 100vw;
     }
 }
 @media (max-width:800px) {
