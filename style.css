@@ -501,13 +501,15 @@ text-align: end;
         font-size: 5vw;
     }
     .leftpage3{
-        width: 80%;
+        width: 100%;
     }
+    
     .toppage3{
         width: 80%;
         padding: 0px 0;
         padding-left: 0px;
         text-align: center;
+        align-items: center;
     }
     .toppage3 p{
         width: 100%;
@@ -519,6 +521,15 @@ text-align: end;
     .child{
         min-height: 55vh;
         width: 80vw;
+    }
+    .page2{
+        flex-wrap: wrap;
+        padding: 5vw 3vw;
+        gap: 5vw;
+    }
+    .elem{
+        height: 100vh ;
+        width: 100%;
     }
 }
 @media (max-width:800px) {
