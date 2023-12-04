@@ -479,6 +479,38 @@ text-align: end;
     justify-content: center;
     text-align: center;
 }
+@media (max-width:1000px) {
+    .video{
+        height: 25vh;
+        position: relative;
+        margin-top: 3vw;     
+    }
+    .video .play{
+        padding: 7vw 5vw;
+        font-size: 3vw;
+        scale: 1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .leftpage3{
+        width: 80%;
+    }
+    .toppage3{
+        width: 80%;
+        padding: 0px 0;
+        padding-left: 0px;
+        text-align: center;
+    }
+    .toppage3 p{
+        width: 100%;
+        font-size: 30px;
+    }
+    .toppage3 a{
+        font-size: 25px;
+    }
+}
 @media (max-width:800px) {
     .navl{
         display: none;
