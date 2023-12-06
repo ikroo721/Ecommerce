@@ -50,7 +50,7 @@ function shopp(){
         else{
 
             gsap.to(".shopp",{
-                top:"-100%",
+                top:"-120%",
                 })
                 gsap.to("nav",{
                     backgroundColor:"initial",
@@ -89,7 +89,7 @@ function menu(){
         }
         else{
             gsap.to(".menu",{
-                top:"-100%",
+                top:"-120%",
                 })
                 gsap.to("nav",{
                     backgroundColor:"initial",
