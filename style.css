@@ -722,6 +722,12 @@ padding: 1vw;
     .leftpage3{
         width: 100%;
     }
+    .shopp{
+        top: -120%;
+    }
+    .menu{
+        top: -110%;
+    }
     
     .toppage3{
         width: 80%;
@@ -752,6 +758,12 @@ padding: 1vw;
     }
 }
 @media (max-width:800px) {
+    .shopp{
+        top: -120%;
+    }
+    .menu{
+        top: -110%;
+    }
     .navl{
         display: none;
     }
@@ -770,6 +782,12 @@ padding: 1vw;
     }
 }
 @media (max-width:600px){
+    .shopp{
+        top: -120%;
+    }
+    .menu{
+        top: -110%;
+    }
     .page1{
         min-height: 75vh;
         padding: 0 1.3vw;
