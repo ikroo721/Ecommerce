@@ -27,6 +27,88 @@ function loco(){
     
 }
 loco()
+function shopp(){
+    var temp2 = 0;
+    var burger2 = document.querySelector(".sh")
+    var nav=  document.querySelector("nav")
+    burger2.addEventListener("click",function(){
+        if(temp2==0){
+            gsap.to(".shopp",{
+                top:"0%",
+                })
+                gsap.to("nav",{
+                    backgroundColor:"black",
+                    color:"white"
+                })
+                gsap.to("nav a",{
+                    backgroundColor:"black",
+                    color:"white"
+                })
+                document.querySelector(".sh").innerHTML= `<i class="fa fa-times" aria-hidden="true"></i>`
+                temp2=1;
+        }
+        else{
+
+            gsap.to(".shopp",{
+                top:"-100%",
+                })
+                gsap.to("nav",{
+                    backgroundColor:"initial",
+                    color:"black"
+                })
+                gsap.to("nav a",{
+                    backgroundColor:"white",
+                    color:"black"
+                })
+                document.querySelector(".sh").innerHTML= `<i class="fa fa-shopping-cart" aria-hidden="true"></i>`
+               
+                temp2=0;
+        }
+    })
+}
+shopp()
+function menu(){
+    var temp = 0;
+    var burger = document.querySelector(".burger")
+    var nav=  document.querySelector("nav")
+    burger.addEventListener("click",function(){
+        if(temp==0){
+            gsap.to(".menu",{
+                top:"0%",
+                })
+                gsap.to("nav",{
+                    backgroundColor:"black",
+                    color:"white"
+                })
+                gsap.to("nav a",{
+                    backgroundColor:"black",
+                    color:"white"
+                })
+                document.querySelector(".burger").innerHTML= `<i class="fa fa-times" aria-hidden="true"></i>`
+                temp=1;
+        }
+        else{
+            gsap.to(".menu",{
+                top:"-100%",
+                })
+                gsap.to("nav",{
+                    backgroundColor:"initial",
+                    color:"black"
+                })
+                gsap.to("nav a",{
+                    backgroundColor:"white",
+                    color:"black"
+                })
+                document.querySelector(".burger").innerHTML= `<i class="fa fa-bars" aria-hidden="true"></i>`
+               
+                temp=0;
+        }
+    })
+    
+    
+}
+menu()
+
 function nav(){
     gsap.to(".svg svg",{
         transform:`translateY(-100%)`,

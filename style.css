@@ -40,17 +40,110 @@ display: flex;
 align-items: center;
 justify-content: space-between;
 }
+.shopp{
+    top: -100%;
+    height: 100vh;
+    width: 100%;
+    z-index: 99;
+    position: fixed;
+    display: flex;
+    align-items: center;
+flex-direction: column;
+background-color: black;
+color: white;
+}
+.shoptop{
+    margin-top: 10vw;
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.shoptop .datacart .addtocart{
+    background-color: white;
+    color: black;
+}
+.menu{
+    height: 100vh;
+    top: -100%;
+    position: absolute;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    z-index: 99;
+}
+.leftmenu{
+    width: 70%;
+    height: 100%;
+display: flex;
+align-items: flex-end;
+color: white;
+justify-content: flex-start;
+gap: 5vw;
+}
+.rightmenu{
+    margin-top: 50px;
+    width: 25%;
+    height: 80%;
+    /* background-color: red; */
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    flex-direction: column;
+    z-index: 9999999;
+
+}
+.red{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 10px;
+    font-family: futura;
+    font-size: 5vw;
+    /* z-index: 999; */
+    /* transition: all 1s; */
+}
+
+.rightmenu a:hover{
+    color: rgb(255, 183, 183);
+}
+.contactu{
+    height: 20vh;
+    width: 20%;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+}
+.socialu{
+    margin-top: 1.5vw;
+    display: flex;
+    flex-direction: column;
+    opacity: .7;
+}
+.contactu a{
+    color: white;
+    text-align: start;
+    text-decoration: none;
+}
 .svg{
     height: 87px;
     width: 120px;
     overflow: hidden;
 }
+svg{
+    cursor: pointer;
+}
 nav a{
     text-decoration: none;
-    color: rgba(0, 0, 0, 0.527);
+    color: rgb(0, 0, 0);
     text-transform: uppercase;
     font-family: halvetic;
-    font-weight: 100;
+    font-weight: 800;
     font-size: 15px;
 }
 .navright{
@@ -272,6 +365,7 @@ white-space: nowrap;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+ cursor: pointer;
 }
 .child .img{
     margin-top: 0px;
@@ -479,6 +573,131 @@ text-align: end;
     justify-content: center;
     text-align: center;
 }
+.data{
+    min-height: 100vh;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-bottom: 1px solid black;
+}
+.datacart{
+    width: 30%;
+    height: 80vh;
+    /* background-color: blue; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 1vw ;
+}
+.addtocart{
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    border-radius: 50px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3vw;
+}
+.quantity{
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.quantity button{
+    background: none;
+    border: none;
+}
+.dataimg{
+    height: 80vh;
+    width: 30%;
+    /* background-color: yellow; */
+    padding: 2vw;
+}
+.dataimg img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.datadesc{
+    height: 80vh;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: green; */
+}
+.info{
+    width: 100%;
+    /* background-color: saddlebrown; */
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    padding: 0 1vw;
+}
+.info p{
+    width: 50%;
+}
+.data2{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.data2top{
+    margin-top: 10vw;
+    min-height: 50vh;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 2vw;
+    padding: 0 2vw;
+    position: relative;
+}
+.data2leftimg,.data2rightimg{
+    height: 40vh;
+    width: 30%;
+padding: 1vw;
+}
+.data2leftimg img,.data2rightimg img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.data2down{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.data2down img{
+    height: 100%;
+    width: 60%;
+    object-fit: cover;
+}
+.data3{
+    min-height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 5vw;
+  
+}
+.data3 h1{
+    font-size: 3vw;
+    font-family: halvetic;
+    font-weight: 100;
+}
 @media (max-width:1000px) {
     .video{
         height: 50vh;
@@ -676,5 +895,44 @@ text-align: end;
         display: flex !important;
         opacity: .5;
 
+    }
+    .datacart{
+        width: 100%;
+    }
+    .dataimg{
+        width: 100%;
+    }
+    .datadesc{
+        width: 100%;
+    }
+    .data2leftimg,.data2rightimg{
+        width: 100%;
+    }
+    .data2down img{
+        height: 50vh;
+        width: 100%;
+    }
+    .leftmenu{
+        width: 50%;
+        height: 80%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5vw 5vw;
+    }
+    .rightmenu{
+        margin-top: 0px;
+        width: 50%;
+        height: 70%;   
+    }
+    .red{
+        line-height: 1vw;
+        font-size: 10vw;
+    }
+    .contactu{
+        height: 30vh;
+        width: 70%;
+    }
+    .socialu{
+        margin-top: 0vw;
     }
 }
